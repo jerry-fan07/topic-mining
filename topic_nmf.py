@@ -1,7 +1,7 @@
 from pathlib import Path
 import numpy as np
 import re
-from scKNIFE import NMF
+from NMF import NMF
 import scipy.sparse as sp
 
 
