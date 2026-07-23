@@ -9,6 +9,9 @@ __pycache__/
 # Data
 /text
 
+# File viewing
+.DS_Store
+
 # Distribution / packaging
 .Python
 build/

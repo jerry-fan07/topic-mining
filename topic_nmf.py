@@ -48,7 +48,7 @@ def word_document_matrix():
                        for i in range(len(num_dict))])
     return matrix, words
 
-def run():
+def run(clusters: int):
     matrix, words = word_document_matrix()
-    W, H = NMF(sp.csr_array(matrix), 8, 10)
+    W, H = NMF(sp.csr_array(matrix), clusters, 10)
     return W, H, words

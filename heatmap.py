@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import topic_nmf
 
-W, H, words = topic_nmf.run()
+W, H, words = topic_nmf.run(6)
 
 # Each word's topic = the column (topic) with the largest weight in its W row.
 word_topic = W.argmax(axis=1)
